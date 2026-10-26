@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --gold-300: #f8e4be;
+    --gold-400: #f3e0b8;
+    --gold-500: #dfb877;
+    --gold-600: #c6994e;
+    --gold-700: #9e7533;
+    --dark-bg: #0a0a0b;
+    --dark-card: #141416;
+    --dark-surface: #1c1d22;
+    --dark-border: rgba(223, 184, 119, 0.15);
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #0a0a0b;
+    color: #e5e7eb;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom Utilities for Luxury Champagne & Obsidian Theme */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #f8e4be 0%, #dfb877 50%, #9e7533 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-glow {
+  box-shadow: 0 0 25px rgba(223, 184, 119, 0.2);
+}
+
+.gold-glow-subtle {
+  box-shadow: 0 0 15px rgba(223, 184, 119, 0.08);
+}
+
+.glass-nav {
+  background: rgba(10, 10, 11, 0.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(223, 184, 119, 0.12);
+}
+
+.glass-card {
+  background: rgba(20, 20, 22, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(223, 184, 119, 0.14);
+}
+
+.glass-card:hover {
+  border-color: rgba(223, 184, 119, 0.35);
+  box-shadow: 0 10px 30px -10px rgba(223, 184, 119, 0.12);
+}
+
+.glow-bg {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(140px);
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+.img-hover-zoom {
+  overflow: hidden;
+}
+
+.img-hover-zoom img {
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.06);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #24252a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #dfb877;
+}

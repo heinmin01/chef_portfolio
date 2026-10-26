@@ -1,0 +1,6 @@
+{
+  "name": "Chef Chit Min Thu — Portfolio & CMS",
+  "description": "Gastronomic Portfolio and live Content Management System for Chef Chit Min Thu. Manage signature creations, culinary masteries, career milestones, and bespoke reservations in real time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
